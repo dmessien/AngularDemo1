@@ -1,0 +1,20 @@
+<div class="column cFull contact">
+    <h1>Contact Us</h1>
+    <h2>{{message}}</h2>
+    <p>Leave us feedback below.</p>
+    <form novalidate class="simple-form">
+        <h2>Contact Form</h2>
+        <h3>Name: <input type="text" ng-model="user.name" required /></h3>
+        <h3>E-mail: <input type="email" ng-model="user.email" required /></h3>
+        <h3>Message: </h3>
+        <div><textarea rows="7" cols="50" ng-model="user.message" placeholder="Enter Message" /></div>
+        <button class="myBtn" ng-click="reset()">Reset</button>
+        <button class="myBtn" ng-click="update(user)">Submit</button>
+    </form>
+    <div id="feedback">
+        <div ng-repeat="group in groups | reverse">
+            <h2>{{group.name}}</h2>
+            <h3>{{group.message}}</h3>
+        </div>
+    </div>
+</div>
