@@ -1,0 +1,76 @@
+/* Global/General CSS */
+    *{padding: 0; margin: 0;}
+    body{
+        background: #d7b181;
+        color: white;
+        text-shadow: 1px 1px 1px #595959;
+        font-family: 'Alegreya Sans', sans-serif;
+    }
+    h1, h2, h3, p{margin: 10px;}
+    .noShow{display: none;}
+    #main h1, #main h2{ color: #fff2d4; }
+    #main p{color: #eee;}
+    .cFull{margin-top: 50px;}
+    
+    /* Menubar CSS */
+    menu{
+        position: relative;
+        background: #643b19;
+        color: #eee;
+        width: 100%;
+        text-align: right;
+        padding-top: 15px; padding-bottom: 15px;
+    }
+    menu ul li{
+        padding: 15px;
+        list-style: none;
+        display: inline;
+    }
+    menu ul li a{
+        color: #eee
+    }
+    menu ul li a:hover{color: #e1bd00;}
+    menu #title{position: absolute; font-family: 'Alegreya Sans SC', sans-serif; top: 5px; left: 5%; color: #fff2d4;}
+    menu #title h1{margin: 0px;}
+
+    
+    /* HOME CSS */
+    .home h1{text-align: center; font-family: 'Alegreya Sans SC', sans-serif; font-weight: 500; font-size: 55px;}
+    .home h2{text-align: center; font-family: 'Alegreya Sans SC', sans-serif; }
+    .home #clients{width: 85%; margin: 0 auto;}
+    .home .client{width: 100%; border-bottom: solid 1px #323232; background: #643b19; padding-top: 25px; padding-bottom: 25px; list-style: none;}
+    .home #clients li h2, #clients li h3{margin-left: 50px; text-align: justify;} .home #clients li p{margin-left: 50px; margin-top: 50px;}
+    .home p{margin: 20px; margin-left: 150px; margin-right: 150px; font-family: 'Alegreya Sans', sans-serif; }
+    .clientHover{
+        border: solid 1px white; 
+    }
+    
+    /* CONTACT CSS */
+    .contact{margin-left: 150px; margin-right: 150px;}
+    form{background: #643b19; padding: 35px; border-radius: 15px; font-size: 18px; width: 500px;}
+    form input{font-size: 18px; color: #5a5a5a; margin-bottom: 15px; font-weight: 100;}
+    .myBtn {
+	-moz-box-shadow:inset 0px 1px 0px 0px #f5978e;
+	-webkit-box-shadow:inset 0px 1px 0px 0px #f5978e;
+	box-shadow:inset 0px 1px 0px 0px #f5978e;
+	background:-webkit-gradient( linear, left top, left bottom, color-stop(0.05, #f24537), color-stop(1, #c62d1f) );
+	background:-moz-linear-gradient( center top, #f24537 5%, #c62d1f 100% );
+	filter:progid:DXImageTransform.Microsoft.gradient(startColorstr='#f24537', endColorstr='#c62d1f');
+	background-color:#f24537;
+	border-radius: 10px;
+	border:1px solid #d02718;
+	color:#ffffff;
+        font-size: 12px;
+        width: 75px; height: 40px;
+	text-shadow:1px 1px 0px #810e05;
+    }
+    .myBtn:hover {
+        background:-webkit-gradient( linear, left top, left bottom, color-stop(0.05, #c62d1f), color-stop(1, #f24537) );
+        background:-moz-linear-gradient( center top, #c62d1f 5%, #f24537 100% );
+        filter:progid:DXImageTransform.Microsoft.gradient(startColorstr='#c62d1f', endColorstr='#f24537');
+        background-color:#c62d1f;
+    }
+    #feedback{background: #e7e0e3; margin-top: 50px; border: 1px #643b19 solid; border-radius: 10px;}
+    #feedback div{border-bottom: solid 1px #7d7d7d;}
+    #feedback div h2, #feedback div h3{margin: 50px; margin-bottom: 25px;}
+    #feedback div h3{color: black; text-shadow: none; font-weight: 100;}
