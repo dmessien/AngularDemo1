@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+
+<!-- define angular app -->
+<html ng-app="p14App">
+
+<head>
+  <!-- CSS -->
+  <link rel="stylesheet" href="/css/gridstyle.css">
+    <link href='http://fonts.googleapis.com/css?family=Alegreya+Sans+SC:100,300,400,500' rel='stylesheet' type='text/css'>
+    <link href='http://fonts.googleapis.com/css?family=Alegreya+Sans:100,300,400' rel='stylesheet' type='text/css'>
+  <link rel="stylesheet" href="/css/p14style.css">
+  <!-- SCRIPTS -->
+  <script src="http://code.jquery.com/jquery.min.js"></script>
+    <script src="http://code.jquery.com/ui/1.10.3/jquery-ui.js"></script>
+  <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.0.8/angular.min.js"></script>
+  <script src="/js/p14app.js"></script>
+</head>
+
+<body ng-controller="mainController">
+
+  <menu id="menu1">
+        <div id="title"><h1>Angular Project</h1></div>
+      <ul>
+        <li><a href="#">Home</a></li>
+        <li><a href="#about">About</a></li>
+        <li><a href="#contact">Contact</a></li>
+      </ul>
+  </menu>
+
+  <div id="main">
+  
+    <!-- angular templating -->
+		<!-- this is where content will be injected -->
+    <div ng-view></div>
+    
+  </div>
+</body>
+</html>
