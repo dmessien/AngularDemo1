@@ -1,0 +1,14 @@
+<div class="column cFull home">
+    <h1>Welcome Home</h1>
+    <h2>{{message}}</h2>
+    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc et ligula accumsan, pharetra nibh nec, facilisis nulla.
+    In pretium semper venenatis. In adipiscing augue elit, at venenatis enim suscipit a. Fusce vitae justo tristique, ultrices mi metus.</p>
+    <h2>Our Clients</h2>
+    <div id="clients" class="noShow" slide-in="500">
+        <li class="client" ng-repeat="item in items" ng-class="{clientHover: hover}" ng-mouseenter="hover = true" ng-mouseleave="hover = false">
+            <h2>{{item.name}}</h2>
+            <h3>{{item.company}}</h3>
+            <p class="noShow" slide-right>{{item.message}}</p>
+        </li>
+    </div>
+</div>
